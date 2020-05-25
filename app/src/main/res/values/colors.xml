@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="blackTextColor">#000</color>
+
+    <color name="colorAccent">#11cfc5</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="color_button_default">#ffa000</color>
+
+    <color name="contentTextColor">#020000</color>
+    <color name="darkTextColor">#020000</color>
+
+    <color name="design_default_color_primary">#3f51b5</color>
+    <color name="design_default_color_primary_dark">#303f9f</color>
+
+    <color name="green">#8bc34a</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="primaryTextColor">#11cfc5</color>
+    <color name="profileAccentColor">#f7f7f7</color>
+    <color name="profileBackground">#fff</color>
+    <color name="profileEditTextColor">#707070</color>
+    <color name="profilePrimaryDark">#ff3b30</color>
+    <color name="register_bk_color">#11cfc5</color>
+    <color name="themeColor">#11cfc5</color>
+    <color name="whiteTextColor">#fff</color>
+</resources>

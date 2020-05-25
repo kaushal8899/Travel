@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/imag" android:layout_width="match_parent" android:layout_height="190dp" android:layout_marginLeft="1dp" android:layout_marginRight="1dp" app:srcCompat="@color/colorAccent"/>
+    <TextView android:textSize="16dp" android:gravity="center" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="4dp" android:text="TextView" android:layout_centerInParent="true" style="@style/loginButton2"/>
+</LinearLayout>

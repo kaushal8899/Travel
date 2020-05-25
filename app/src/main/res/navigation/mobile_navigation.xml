@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_train">
+
+    <fragment
+        android:id="@+id/navigation_train"
+        android:name="com.example.travel.ui.train.TrainFragment"
+        android:label="Trains"
+        tools:layout="@layout/fragment_flight" />
+
+    <fragment
+        android:id="@+id/navigation_flight"
+        android:name="com.example.travel.ui.flights.FlightFragment"
+        android:label="Flights"
+        tools:layout="@layout/fragment_flight" />
+</navigation>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.Transport"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    app:contentPadding="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="3dp">
+            <TextView
+                android:textSize="20dp"
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="22919 Mgr Chennai Central-Ahmedabad Humsafar Exp"
+                android:layout_weight="0.5" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <include layout="@layout/time_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:textSize="20dp"
+                android:gravity="left"
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="_ _ _ _ _ F _"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:textSize="20dp"
+                android:gravity="right"
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="3h 13m"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#545962d8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/classes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <!--                <Button-->
+                <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="0.3"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:textColor="@color/colorPrimary"-->
+                <!--                    android:textSize="18dp" />-->
+
+                <!--                <Button-->
+                <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="0.3"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:textSize="18dp" />-->
+
+                <!--                <Button-->
+                <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="0.3"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:textSize="18dp" />-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="BOOK"
+                    android:onClick="book"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

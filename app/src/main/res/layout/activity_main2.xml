@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        style="@style/loginButton2" />
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout
+        android:scrollbarSize="4dp"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <GridView
+            android:id="@+id/locations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerInParent="true" />
+
+        <com.github.mzule.fantasyslide.SideBar
+            android:gravity="center_vertical"
+            android:layout_gravity="start"
+            android:id="@+id/leftSideBar"
+            android:background="@color/colorPrimary"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            app:maxTranslationX="66dp">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:background="@drawable/circle"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="4dp"
+                    app:srcCompat="@drawable/ic_register_hero" />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/contentTextColor"
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/menuText"
+                android:text="Home"
+                android:drawableLeft="@drawable/ic_home_black_24dp" />
+
+            <TextView
+                style="@style/menuText"
+                android:text="Profile"
+                android:drawableLeft="@drawable/profile" />
+
+            <TextView
+                style="@style/menuText"
+                android:text="Your Preferences"
+                android:drawableLeft="@drawable/ic_settings_black_24dp" />
+
+            <TextView
+                style="@style/menuText"
+                android:text="Logout"
+                android:drawableLeft="@drawable/ic_450387" />
+        </com.github.mzule.fantasyslide.SideBar>
+    </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:id="@+id/tipView"
+        android:background="@color/colorAccent"
+        android:padding="18dp"
+        android:visibility="invisible"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_train"
+        android:icon="@drawable/ic_train_black_24dp"
+        android:title="Trains" />
+    <item
+        android:id="@+id/navigation_flight"
+        android:icon="@drawable/ic_flight_black_24dp"
+        android:title="Flights" />
+</menu>

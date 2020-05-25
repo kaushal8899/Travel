@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ProfileActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:text="Account Info"
+            style="@style/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                app:srcCompat="@drawable/ic_name"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Name"
+                android:layout_toRightOf="@+id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/name"
+                android:text="developer"
+                android:layout_toRightOf="@+id/nameImageView"
+                style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mobileImageView"
+                app:srcCompat="@drawable/ic_mobile"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Mobile"
+                android:layout_toRightOf="@+id/mobileImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_toRightOf="@+id/mobileImageView"
+                style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/emailImageView"
+                app:srcCompat="@drawable/ic_email"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Email"
+                android:layout_toRightOf="@+id/emailImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/email"
+                android:text="developer@appsnipp.com"
+                android:layout_toRightOf="@+id/emailImageView"
+                style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:onClick="changePassword"
+            style="@style/profileStyledBackButton"
+            android:layout_width="wrap_content"
+            android:text="Change Password"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
