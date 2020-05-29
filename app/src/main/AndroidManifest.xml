@@ -14,10 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.AccomodationActivity"></activity>
         <activity
             android:name=".activities.Transport"
-
-            android:label="@string/title_activity_transport"></activity>
+            android:label="@string/title_activity_transport" />
         <activity
             android:name=".activities.ProfileActivity"
             android:parentActivityName=".activities.MainActivity"
